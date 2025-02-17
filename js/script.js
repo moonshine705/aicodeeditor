@@ -15,7 +15,7 @@ require(["vs/editor/editor.main"], function () {
 async function analyzeCode() {
     let code = window.editor.getValue();
     if (!code.trim()) {
-        alert("Code cannot be empty!");
+        alert("Code cannot be empty");
         return;
     }
 
