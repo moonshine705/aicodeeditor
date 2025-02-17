@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#editor-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#editor {
+    height: 400px;
+    border: 1px solid #ddd;
+}
+
+#debug-ai-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#debug-ai-btn:hover {
+    background: #0056b3;
+}
+
+/* Autocomplete Popup */
+#autocomplete-popup {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: none;
+}
+
+.autocomplete-hidden {
+    display: none;
+}
+
+/* Inline AI Chat */
+#inline-chat {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+.chat-hidden {
+    display: none;
+}

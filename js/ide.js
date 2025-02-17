@@ -55,7 +55,7 @@ var layoutConfig = {
         type: "row",
         content: [{
             type: "component",
-            width: 66,
+            width: 80,
             componentName: "source",
             id: "source",
             title: "Source Code",
@@ -67,10 +67,10 @@ var layoutConfig = {
             type: "column",
             content: [{
                 type: "component",
-                height: 66,
-                componentName: "ai",
-                id: "ai",
-                title: "AI Coding Assistant",
+                width: 20,
+                componentName: "chat",
+                id: "chat",
+                title:  "Chat Assistant",
                 isClosable: false,
                 componentState: {
                     readOnly: false
@@ -571,7 +571,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     enabled: true
                 }
             });
-
+            sourceEditor.addCommand("epofok",run);
             sourceEditor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, run);
         });
 
@@ -601,8 +601,10 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
         });
 
-        layout.registerComponent("ai", function (container, state) {
-            container.getElement()[0].appendChild(document.getElementById("judge0-chat-container"));
+        layout.registerComponent("chat", function (container, state) {
+            const chatContainer = document.createElement("div");
+            chatContainter.classname = "chat-container h-pull flex flex-col bg-[1e1e1e]"; 
+            chatContainer.innerHTML = 
         });
 
         layout.on("initialised", function () {
