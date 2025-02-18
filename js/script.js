@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("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");
+const genAI = new GoogleGenerativeAI("");
 
 // Initialize Monaco Editor
 require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor/min/vs' }});
